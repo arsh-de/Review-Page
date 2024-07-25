@@ -29,6 +29,10 @@
 
 body {
     background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -42,7 +46,6 @@ a {
 .container {
     background-color: var(--white);
     border-radius: 15px;
-    margin: 10% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 600px;
@@ -58,16 +61,17 @@ a {
 
 .item:nth-of-type(2) {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
 
 .heading h1 {
     color: var(--very-dark-blue);
     font-family: var(--font-fraunces);
-    font-weight: 700;
     line-height: 1;
     font-size: 40px;
-    margin-bottom: 25px;
-
 }
 
 .heading-2 h4 {
@@ -75,20 +79,17 @@ a {
     font-family: var(--font-montserrat);
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 20px;
 }
 
 .paragraph {
     font-size: 14px;
-    color: var(--dark-grayish-blue);
     font-weight: 500;
-    font-family: var(--font-montserrat);
-    margin-bottom: 20px;
     line-height: 1.5;
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-montserrat);
 }
 
 .prices {
-    padding-bottom: 25px;
     display: flex;
     align-items: center;
 }
